@@ -4,7 +4,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 function Footer() {
   return (
-    <section className=' flex flex-col md:flex-row  md:justify-evenly my-10  *:mb-12 px-10'>
+    <section className=' flex flex-col md:flex-row  md:justify-evenly my-4  *:mb-12 px-10'>
  <NavLink to={'/'} onClick={()=>window.scroll({top:0,behavior:'smooth'})} className="  text-2xl font-medium flex">  <span className='text-color6 font-bold'>Treval</span>Tour</NavLink>
  <ul>
   <li className='text-2xl font-semibold mb-4'>Contect</li>

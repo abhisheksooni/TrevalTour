@@ -9,7 +9,7 @@ function Navbar() {
     
    
      {/* md screen on */}
-    <nav className=' hidden md:flex gap-5 bg-color4 items-center justify-between px-[10vw] py-6'>
+    <nav className=' hidden md:flex gap-5 bg-color4 items-center justify-between px-[7vw] py-6'>
       <NavLink to={'/'} className=" text-2xl font-medium flex">  <span className='text-color6 font-bold'>Treval</span>Tour</NavLink>
       <ul className=' flex gap-7 text-lg  font-medium'>
         <li><NavLink to={'/'} onClick={()=>window.top(0,0)} className={({isActive})=>`${isActive? 'text-color5': ''} hover:text-color6`}>Home</NavLink></li>
