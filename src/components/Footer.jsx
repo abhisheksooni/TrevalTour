@@ -20,10 +20,10 @@ function Footer() {
  <li className='text-2xl font-semibold mb-4'>Pay Safely with Us</li>
   <li>The Payment is Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
   <div className="flex gap-3 text-2xl mt-3">
-    <li><i class="fa-brands fa-cc-paypal"></i></li>
-    <li><i class="fa-brands fa-cc-visa"></i></li>
-    <li><i class="fa-brands fa-cc-mastercard"></i></li>
-    <li><i class="fa-brands fa-cc-amex"></i></li>
+    <li><i  className="fa-brands fa-cc-paypal"></i></li>
+    <li><i  className="fa-brands fa-cc-visa"></i></li>
+    <li><i  className="fa-brands fa-cc-mastercard"></i></li>
+    <li><i  className="fa-brands fa-cc-amex"></i></li>
  
   </div>
  </ul>

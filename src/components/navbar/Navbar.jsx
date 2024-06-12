@@ -9,7 +9,7 @@ function Navbar() {
     
    
      {/* md screen on */}
-    <nav className=' hidden md:flex gap-5 bg-color4 items-center justify-between px-[7vw] py-6'>
+    <nav className=' hidden md:flex gap-5  items-center justify-between px-[7vw] py-6 sticky top-0 z-50 bg-color4/60 backdrop-blur-lg'>
       <NavLink to={'/'} className=" text-2xl font-medium flex">  <span className='text-color6 font-bold'>Treval</span>Tour</NavLink>
       <ul className=' flex gap-7 text-lg  font-medium'>
         <li><NavLink to={'/'} onClick={()=>window.top(0,0)} className={({isActive})=>`${isActive? 'text-color5': ''} hover:text-color6`}>Home</NavLink></li>
@@ -21,12 +21,12 @@ function Navbar() {
     </nav>
 
     {/*  mobile Navbar */}
-    <nav className=' '>
+    <nav className='sticky top-0 z-50 bg-color4/60 backdrop-blur-lg '>
       <div className={` ${MenuShow?"hidden":"flex"} md:hidden py-4  px-4 justify-between`}>
       <NavLink to={'/'} className=" text-2xl font-medium">Treval Tour</NavLink>
     <button onClick={()=>SetMenuShow(true)} >< EllipsisVertical color='#5356F6'/></button>
       </div>
-      <ul className={`${MenuShow?"gred":"hidden"} text-xl *:mb-3 font-medium bg-color1 text-center pt-10 relative w-full px-4 py-4`}>
+      <ul className={`${MenuShow?"gred":"hidden"} text-xl *:mb-3 font-medium text-center pt-10 relative w-full px-4 py-4 bg-color4/60 backdrop-blur-lg`}>
       <button onClick={()=>SetMenuShow(false)} className=' absolute top-4 right-[8vw]'>< X color='#5356F6' size={30}/></button>
         <li><NavLink to={'/'} onClick={()=>window.top(0,0)} className={({isActive})=>`${isActive? 'text-color5': ''} hover:text-color5`}>Home</NavLink></li>
         <li><NavLink to={'/about'} onClick={()=>window.top(0,0)} className={({isActive})=>`${isActive? 'text-color5': ''} hover:text-color5`}>About Us</NavLink></li>

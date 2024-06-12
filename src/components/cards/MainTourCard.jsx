@@ -10,7 +10,7 @@ function MainTourCard({image,tourName,price,star,mapLoction}) {
         <p className='flex items-center gap-1 text-sm text-color2/60 mb-1.5'><MapPin size={18}/>{mapLoction?mapLoction:"Add Tour mapLoction"}</p>
         {/* <p className=''><Star/>{star?star:"4.0"}</p> */}
         <p className='text-color2/60 text-sm leading-none mb-1'>Start From</p>
-        <p className='text-lg text-color5 font-semibold leading-none'>Rs. {price?price:"00"}</p>
+        <p className='text-[22px] text-color5 font-semibold leading-none'>Rs. {price?price:"00"}</p>
         </div>
     </div>
   )

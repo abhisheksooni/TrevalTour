@@ -12,6 +12,7 @@ import Home from './pages/Home.jsx'
 import About from './pages/About.jsx';
 import Packeges from './pages/Packeges.jsx';
 import Contect from './pages/Contect.jsx';
+import DetailTour from './pages/DetailTour.jsx';
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
       {
         path:"contect",
         element:<Contect/>
+      },
+      {
+        path:"detailtour",
+        element:<DetailTour/>
       }
     ]
   },
