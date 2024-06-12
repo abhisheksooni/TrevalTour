@@ -13,6 +13,7 @@ import About from './pages/About.jsx';
 import Packeges from './pages/Packeges.jsx';
 import Contect from './pages/Contect.jsx';
 import DetailTour from './pages/DetailTour.jsx';
+import BookingForm from './pages/BookingForm.jsx';
 
 const router = createBrowserRouter([
   {
@@ -37,8 +38,14 @@ const router = createBrowserRouter([
       },
       {
         path:"detailtour",
-        element:<DetailTour/>
+        element:<DetailTour/>,
+        
+      },
+      {
+        path:"bookingform",
+        element:<BookingForm/>
       }
+      
     ]
   },
 ]);

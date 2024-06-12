@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import Navbar from '../components/navbar/Navbar'
 import '../App.css'
 import TourCard from '../components/cards/TourCard'
@@ -7,7 +7,12 @@ import { MoveRight, Send,Earth, Headset, CirclePercent } from 'lucide-react'
 import MainTourCard from '../components/cards/MainTourCard'
 import TourCard2 from '../components/cards/TourCard2'
 import ReviewsCard from '../components/ReviewsCard'
+
+import video from '../video/2.mp4'
+
+
 function Home() {
+
   return (
   <main  className=' mx-auto max-w-[1900px] w-full px-5 bg-color3'>
     
@@ -30,8 +35,13 @@ function Home() {
 </div>
     </section>
     {/* 2 section image add*/}
-    <section className=' w-full h-[500px] '>
+    <section className=' w-full h-[500px] overflow-y-hidden'>
       <div className="images2 w-full h-full rounded-3xl"></div>
+      {/* <div className="   rounded-3xl">
+        <video src={video}  autoPlay muted loop id='videohome' className='w-[150%] rounded-3xl' >
+        
+        </video>
+      </div> */}
     </section>
     {/* 3 section */}
     <section className='my-10'>
@@ -58,11 +68,12 @@ Experience.</p>
 <p  className='my-6 text-lg leading-6'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum expedita voluptatum consecteturro.</p>
       </div>
       {/* tours add */}
-      <section className='flex my-10 gap-4 md:gap-6 justify-start md:flex-wrap md:justify-center w-full md:px-10 overflow-x-scroll'>
+      <section  className='flex my-10 gap-4 md:gap-6 justify-start md:flex-wrap md:justify-center w-full md:px-10 overflow-x-scroll'>
 <TourCard/>
 <TourCard/>
 <TourCard/>
 <TourCard/>
+
 
       </section>
       <section className='flex my-10 gap-4 md:gap-6 justify-start md:flex-wrap md:justify-center w-full md:px-10 overflow-x-scroll'>
