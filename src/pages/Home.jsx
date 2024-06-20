@@ -8,7 +8,7 @@ import MainTourCard from '../components/cards/MainTourCard'
 import TourCard2 from '../components/cards/TourCard2'
 import ReviewsCard from '../components/ReviewsCard'
 
-import video from '../video/2.mp4'
+import {im1, im11, im12, im13, im14, im2, im3, im4} from '../Images/ImagesExport.js'
 
 
 function Home() {
@@ -68,28 +68,30 @@ Experience.</p>
 <p  className='my-6 text-lg leading-6'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum expedita voluptatum consecteturro.</p>
       </div>
       {/* tours add */}
-      <section  className='flex my-10 gap-4 md:gap-6 justify-start md:flex-wrap md:justify-center w-full md:px-10 overflow-x-scroll'>
-<TourCard/>
-<TourCard/>
-<TourCard/>
-<TourCard/>
+      <section  className='flex my-10 gap-4 md:gap-6 justify-start  lg:justify-center w-full md:px-10 overflow-x-scroll'>
+<TourCard images={im1} nameadd='Agra'/>
+<TourCard images={im2} nameadd='Ladakh'/>
+<TourCard images={im3} nameadd='Sikkim'/>
+<TourCard images={im4} nameadd='Lakshadweep'/>
+
 
 
       </section>
-      <section className='flex my-10 gap-4 md:gap-6 justify-start md:flex-wrap md:justify-center w-full md:px-10 overflow-x-scroll'>
-<TourCard2/>
-<TourCard2/>
-<TourCard2/>
-<TourCard2/>
+      <section className='flex my-10 gap-4 md:gap-6 justify-start  lg:justify-center w-full md:px-10 overflow-x-scroll'>
+<TourCard2 images={im11} nameadd='Goa'/>
+<TourCard2 images={im12} nameadd='kashmir'/>
+<TourCard2 images={im13} nameadd='Nepal'/>
+<TourCard2 images={im14} nameadd='Bhutan'/>
+
       </section>
-      <NavLink className={`flex gap-5 bg-color3 rounded-full px-4 py-1 w-fit my-5 mx-auto`}>All Destionations <MoveRight color='#5659F5'/></NavLink>
+      {/* <NavLink className={`flex gap-5 bg-color3 rounded-full px-4 py-1 w-fit my-5 mx-auto`}>All Destionations <MoveRight color='#5659F5'/></NavLink> */}
     </section>
     {/* Freshly Added section */}
-    <section className='my-16'>
+    {/* <section className='my-16'>
 <div className="text-center">
 <span className=' text-4xl md:text-5xl font-bold'>Freshly <span className='text-color5'>Added</span></span>
 </div>
-{/* Card add section */}
+
 <div className="flex my-10 gap-4 w-full md:gap-8 justify-start md:flex-wrap md:justify-center md:px-10 overflow-x-scroll">
   <MainTourCard/>
   <MainTourCard/>
@@ -97,10 +99,10 @@ Experience.</p>
   <MainTourCard/>
 </div>
 <NavLink className={`flex gap-5 bg-color3 rounded-full px-4 py-1 w-fit my-5 mx-auto`}>All New Tour <MoveRight color='#5659F5'/></NavLink>
-    </section>
+    </section> */}
     {/* Add sections */}
-    <section className=' flex w-full flex-wrap justify-center gap-8 my-16'>
-      <div className=" addimage relative max-w-[850px] w-full h-[450px] md:h-[400px] rounded-3xl">
+    <section className='  w-full my-16 p-5'>
+      <div className=" addimage relative w-full h-[450px] md:h-[400px] rounded-3xl">
 <div className="absolute w-full *:mb-7 text-xl font-medium h-full bg-color2/40 rounded-3xl p-5 md:px-10 md:py-14 text-color1">
 <p className='text-5xl'>Discover Special Deals!</p>
 <p className='text-2xl max-w-[500px] '>Make sure to check out these special promotions</p>
@@ -109,28 +111,7 @@ Experience.</p>
 </div>
       </div>
       {/* card 2 */}
-      <div className=" max-w-[850px] w-full md:h-[400px] rounded-3xl">
-<div className=" w-full  text-xl font-medium h-full bg-color2/10 rounded-3xl p-5 md:px-10 md:py-14 text-color2">
-<p className='text-5xl mb-5'>Don't miss a thing</p>
-<p className='text-[22px] max-w-[500px] text-color2/50'>Get update to special deals and exclusive offers</p>
-<p className='text-[22px] max-w-[500px] text-color2/50'>Sing uo to our Newsietter!</p>
-<br />
-<div className=" mt-5">
-    {/* mobile show */}
-  <div className=" flex md:hidden items-center gap-2 bg-color4 rounded-full w-fit py-2 pl-3">
-  <input type="email"  placeholder='Your Email Address' className='bg-transparent focus:outline-0 w-fit' />
-  </div>
-  <button className='bg-color5 rounded-full flex md:hidden text-white py-3 px-5  items-center gap-2 mx-auto mt-2'> <Send color='#fff'/>SUBSCRIBE</button>
 
-  {/* pc show */}
-  <div className=" hidden md:flex items-center gap-2 bg-color4 rounded-full w-fit pl-3">
-    <Send color='#9CA3AF'/>
-  <input type="email"  placeholder='Your Email Address' className='bg-transparent focus:outline-0' />
-  <button className='bg-color5 rounded-full text-white py-3 px-5'>SUBSCRIBE</button>
-  </div>
-</div>
-</div>
-      </div>
     </section>
 
     {/* reviews */}
@@ -138,7 +119,7 @@ Experience.</p>
       <div className="text-center my-8 ">
         <p className='text-4xl md:text-5xl font-semibold max-w-[600px] mx-auto'> What oue Customers are saying about us </p>
       </div>
-      <div className="flex  md:flex-wrap  justify-start md:justify-center gap-8 overflow-x-scroll">
+      <div className="flex  lg:flex-wrap  justify-start lg:justify-center gap-8 overflow-x-scroll">
 <ReviewsCard/>
 <ReviewsCard/>
 <ReviewsCard/>
