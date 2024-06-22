@@ -9,6 +9,9 @@ import im12 from "./topDestionations/kashmir.jpg"
 import im13 from "./topDestionations/Nepal.jpg"
 import im14 from "./topDestionations/bhuta.jpg"
 
+import ad1 from "./ad/ad.jpeg"
+import ad2 from "./ad/addddd.png"
+
 export{
     im1,
     im2,
@@ -19,4 +22,8 @@ export{
     im12,
     im13,
     im14,
+
+    // ad
+    ad1,
+    ad2,
 }

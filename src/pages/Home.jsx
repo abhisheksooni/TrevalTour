@@ -8,7 +8,7 @@ import MainTourCard from '../components/cards/MainTourCard'
 import TourCard2 from '../components/cards/TourCard2'
 import ReviewsCard from '../components/ReviewsCard'
 
-import {im1, im11, im12, im13, im14, im2, im3, im4} from '../Images/ImagesExport.js'
+import {ad2, im1, im11, im12, im13, im14, im2, im3, im4} from '../Images/ImagesExport.js'
 
 
 function Home() {
@@ -101,17 +101,19 @@ Experience.</p>
 <NavLink className={`flex gap-5 bg-color3 rounded-full px-4 py-1 w-fit my-5 mx-auto`}>All New Tour <MoveRight color='#5659F5'/></NavLink>
     </section> */}
     {/* Add sections */}
-    <section className='  w-full my-16 p-5'>
-      <div className=" addimage relative w-full h-[450px] md:h-[400px] rounded-3xl">
+    <section className='  w-full flex lg:flex-row flex-col my-16 p-5 gap-5 '>
+      <div className=" addimage relative w-full h-[450px] md:h-[400px] rounded-3xl ">
 <div className="absolute w-full *:mb-7 text-xl font-medium h-full bg-color2/40 rounded-3xl p-5 md:px-10 md:py-14 text-color1">
 <p className='text-5xl'>Discover Special Deals!</p>
 <p className='text-2xl max-w-[500px] '>Make sure to check out these special promotions</p>
 <br />
 <NavLink className={`bg-color5 text-xl text-color1 px-7 py-3 font-semibold rounded-full  hover:bg-color6`}>See Tours</NavLink>
 </div>
-      </div>
+      </div >
       {/* card 2 */}
-
+      <div className={`w-full addimage2 h-[500px] md:h-[400px] rounded-3xl `}>
+        {/* <img src={ad2} alt="" className='h-[450px] md:h-[400px] rounded-3xl w-full'  /> */}
+      </div>
     </section>
 
     {/* reviews */}
