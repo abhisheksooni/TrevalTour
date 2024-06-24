@@ -15,13 +15,13 @@ import Home from './pages/Home.jsx'
 import About from './pages/About.jsx';
 import Packeges from './pages/Packeges.jsx';
 import Contect from './pages/Contect.jsx';
-import DetailTour from './pages/DetailTour.jsx';
 import BookingForm from './pages/BookingForm.jsx';
 import Singup from './pages/Singup.jsx';
-import ToursUpload from './pages/ToursUpload.jsx';
-import Singin from './pages/Singin.jsx';
+import Signin from './pages/Signin.jsx';
 import Admin from './pages/Admin.jsx';
-import DeleteTour from './pages/DeleteTour.jsx';
+import AdminEditPackages from './pages/AdminEditPackages.jsx';
+import DetailPackages from './pages/DetailPackages.jsx';
+import AddNewPackage from './pages/AddNewPackage.jsx';
 
 const router = createBrowserRouter([
   {
@@ -45,8 +45,8 @@ const router = createBrowserRouter([
         element:<Contect/>
       },
       {
-        path:"detailtour/:id",
-        element:<DetailTour/>,
+        path:"detailpackages/:id",
+        element:<DetailPackages/>,
         
       },
       {
@@ -58,8 +58,8 @@ const router = createBrowserRouter([
         element:<Singup/>
       },
       {
-        path:"singin",
-        element:<Singin/>
+        path:"signin",
+        element:<Signin/>
       },
      
       {
@@ -67,12 +67,12 @@ const router = createBrowserRouter([
         element:<Admin/>,
         children:[
           {
-            path:"tourupload",
-            element:<ToursUpload/>
+            path:"addpackage",
+            element:<AddNewPackage/>
           },
           {
-            path:"deletetour",
-            element:<DeleteTour/>
+            path:"editpackages",
+            element:<AdminEditPackages/>
           },
         ]
 
